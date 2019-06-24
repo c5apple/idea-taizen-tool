@@ -9,6 +9,7 @@ import { Page02FocusingModule } from './page02-focusing/page02-focusing.module';
 import { Page03ThinkingAtTheEdgeMySentenceSheetModule } from './page03-thinking-at-the-edge-my-sentence-sheet/page03-thinking-at-the-edge-my-sentence-sheet.module';
 import { Page04EdisonsNotesModule } from './page04-edisons-notes/page04-edisons-notes.module';
 import { Page05NonstopWritingModule } from './page05-nonstop-writing/page05-nonstop-writing.module';
+import { Page06RandomStimuliModule } from './page06-random-stimuli/page06-random-stimuli.module';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { Page05NonstopWritingModule } from './page05-nonstop-writing/page05-nons
     Page02FocusingModule,
     Page03ThinkingAtTheEdgeMySentenceSheetModule,
     Page04EdisonsNotesModule,
-    Page05NonstopWritingModule
+    Page05NonstopWritingModule,
+    Page06RandomStimuliModule
   ],
   providers: [],
   bootstrap: [AppComponent]
