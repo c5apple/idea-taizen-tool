@@ -8,12 +8,80 @@
     <label class="nav-unshown" id="nav-close" for="nav-input"></label>
     <div id="nav-content">
       <nav class="container">
+        <p>自分に尋ねる</p>
         <ol (click)="close()">
           <li><a routerLink="bug-listing">バグリスト</a></li>
           <li><a routerLink="focusing">フォーカシング</a></li>
           <li><a routerLink="thinking-at-the-edge-my-sentence-sheet">TAEのマイセンテンスシート</a></li>
           <li><a routerLink="edisons-notes">エジソン・ノート</a></li>
           <li><a routerLink="nonstop-writing">ノンストップ・ライティング</a></li>
+        </ol>
+        <p>偶然を読む</p>
+        <ol start="6" (click)="close()">
+          <li><a routerLink="">ランダム刺激</a></li>
+          <li><a routerLink="">エクスカーション</a></li>
+          <li><a routerLink="">セレンディピティ・カード</a></li>
+          <li><a routerLink="">フィンケの曖昧な部品</a></li>
+        </ol>
+        <p>問題を察知する</p>
+        <ol start="10" (click)="close()">
+          <li><a routerLink="">ケプナー・トリゴーの状況把握</a></li>
+          <li><a routerLink="">空間と時間のグリッド</a></li>
+          <li><a routerLink="">事例－コード・マトリクス</a></li>
+        </ol>
+        <p>問題を分析する</p>
+        <ol start="13" (click)="close()">
+          <li><a routerLink="">P.K. ディックの質問</a></li>
+          <li><a routerLink="">なぜなぜ分析</a></li>
+          <li><a routerLink="">キプリング・メソッド</a></li>
+          <li><a routerLink="">コンセプト・ファン</a></li>
+          <li><a routerLink="">ケプナー・トリゴーの問題分析</a></li>
+        </ol>
+        <p>仮定を疑う</p>
+        <ol start="18" (click)="close()">
+          <li><a routerLink="">仮定破壊</a></li>
+          <li><a routerLink="">問題逆転</a></li>
+        </ol>
+        <p>視点を変える</p>
+        <ol start="20" (click)="close()">
+          <li><a routerLink="">ルビッチならどうする？</a></li>
+          <li><a routerLink="">ディズニーの3つの部屋</a></li>
+          <li><a routerLink="">ヴァーチャル賢人会議</a></li>
+          <li><a routerLink="">オズボーン・チェックリスト</a></li>
+        </ol>
+        <p>組み合わせる</p>
+        <ol start="24" (click)="close()">
+          <li><a routerLink="">関係アルゴリズム</a></li>
+          <li><a routerLink="">デペイズマン</a></li>
+          <li><a routerLink="">さくらんぼ分割法</a></li>
+          <li><a routerLink="">属性列挙法</a></li>
+          <li><a routerLink="">形態分析法</a></li>
+        </ol>
+        <p>矛盾から考える</p>
+        <ol start="29" (click)="close()">
+          <li><a routerLink="">モールスのライバル学習</a></li>
+          <li><a routerLink="">弁証法的発想法</a></li>
+          <li><a routerLink="">対立解消図（蒸発する雲）</a></li>
+        </ol>
+        <p>アナロジーで考える</p>
+        <ol start="32" (click)="close()">
+          <li><a routerLink="">バイオニクス法</a></li>
+          <li><a routerLink="">ゴードンの４つの類比（アナロジー）</a></li>
+          <li><a routerLink="">等価変換法</a></li>
+          <li><a routerLink="">NM法T型</a></li>
+          <li><a routerLink="">源内の呪術的コピーライティング</a></li>
+          <li><a routerLink="">カイヨワの〈対角線の科学〉</a></li>
+        </ol>
+        <p>パラフレーズする</p>
+        <ol start="38" (click)="close()">
+          <li><a routerLink="">シソーラス・パラフレーズ</a></li>
+          <li><a routerLink="">タルムードの弁証法</a></li>
+        </ol>
+        <p>待ち受ける</p>
+        <ol start="40" (click)="close()">
+          <li><a routerLink="">赤毛の猟犬</a></li>
+          <li><a routerLink="">ポアンカレのインキュベーション</a></li>
+          <li><a routerLink="">夢見</a></li>
         </ol>
       </nav>
     </div>
