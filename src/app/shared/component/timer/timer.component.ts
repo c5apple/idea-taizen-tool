@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { TimerService } from '../../service/timer/timer.service';
 
@@ -8,6 +8,9 @@ import { TimerService } from '../../service/timer/timer.service';
   styleUrls: ['./timer.component.scss']
 })
 export class TimerComponent implements OnInit {
+
+  /** 自動開始 */
+  @Input() autoPlay = false;
 
   /** 残り時間 */
   time = 0;
@@ -22,10 +25,11 @@ export class TimerComponent implements OnInit {
 
   ngOnInit() {
     // 持ち時間設定
-    // this.timerService.timeLimit = 1;
     this.time = this.timerService.timeLimit;
 
-    this.start();
+    if (this.autoPlay) {
+      this.start();
+    }
   }
 
   /**
