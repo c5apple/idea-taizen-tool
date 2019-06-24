@@ -1,0 +1,18 @@
+<header>
+  <div id="nav-drawer">
+    <input id="nav-input" type="checkbox" class="nav-unshown">
+    <label id="nav-open" for="nav-input"><span></span></label>
+
+    <h1 class="h4">アイデア大全ツール</h1>
+
+    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+    <div id="nav-content">
+      <nav class="container">
+        <ol (click)="close()">
+          <li><a routerLink="bug-listing">バグリスト</a></li>
+          <li><a routerLink="focusing">フォーカシング</a></li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+</header>

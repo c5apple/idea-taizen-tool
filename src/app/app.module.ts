@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderModule } from './shared/component/header/header.module';
 import { Page01BugListingModule } from './page01-bug-listing/page01-bug-listing.module';
 import { Page02FocusingModule } from './page02-focusing/page02-focusing.module';
 
@@ -13,6 +14,7 @@ import { Page02FocusingModule } from './page02-focusing/page02-focusing.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HeaderModule,
     Page01BugListingModule,
     Page02FocusingModule
   ],
