@@ -13,7 +13,7 @@ export class TimerComponent implements OnInit {
   @Input() autoPlay = false;
 
   /** 残り時間 */
-  time = 0;
+  @Input() time: number;
 
   /** タイマー */
   timer: Subscription;
@@ -25,7 +25,9 @@ export class TimerComponent implements OnInit {
 
   ngOnInit() {
     // 持ち時間設定
-    this.time = this.timerService.timeLimit;
+    if (this.time === undefined) {
+      this.time = this.timerService.timeLimit;
+    }
 
     if (this.autoPlay) {
       this.start();
