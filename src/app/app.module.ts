@@ -10,6 +10,9 @@ import { Page03ThinkingAtTheEdgeMySentenceSheetModule } from './page03-thinking-
 import { Page04EdisonsNotesModule } from './page04-edisons-notes/page04-edisons-notes.module';
 import { Page05NonstopWritingModule } from './page05-nonstop-writing/page05-nonstop-writing.module';
 import { Page06RandomStimuliModule } from './page06-random-stimuli/page06-random-stimuli.module';
+import { Page07ExcursionModule } from './page07-excursion/page07-excursion.module';
+import { Page08SerendipityCardsModule } from './page08-serendipity-cards/page08-serendipity-cards.module';
+import { Page09FinkesAmbiguousPartsModule } from './page09-finkes-ambiguous-parts/page09-finkes-ambiguous-parts.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { Page06RandomStimuliModule } from './page06-random-stimuli/page06-random
     Page03ThinkingAtTheEdgeMySentenceSheetModule,
     Page04EdisonsNotesModule,
     Page05NonstopWritingModule,
-    Page06RandomStimuliModule
+    Page06RandomStimuliModule,
+    Page07ExcursionModule,
+    Page08SerendipityCardsModule,
+    Page09FinkesAmbiguousPartsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
